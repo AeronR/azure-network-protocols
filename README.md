@@ -2,20 +2,25 @@
 <img src="https://i.imgur.com/Ua7udoS.png" alt="Traffic Examination"/>
 </p>
 
-<h1>Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines</h1>
-In this tutorial, we observe various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
+<h1>Inspecting Traffic Between Azure Virtual Machines</h1>
 
+In this document, I will be inspecting various network traffic between two Azure Virtual Machines using WireShark.
 
-<h2>Video Demonstration</h2>
+Observing and understanding Network Protocol traffic is quite imporant and is used for multiple reasons such as:
 
-- ### [YouTube: Azure Virtual Machines, Wireshark, and Network Security Groups](https://www.youtube.com)
+1. Troubleshooting network issues
+2. Identifying security vulnerabilities and detecting attacks
+3. Optimizing network performance
+4. Developing and testing protocols
+5. Monitoring networking activity and establishing baselines
+6. Education purposes and learning about networking
 
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
-- Various Command-Line Tools
-- Various Network Protocols (SSH, RDH, DNS, HTTP/S, ICMP)
+- Various Command-Line Tools (ping, ipconfig) 
+- Various Network Protocols (ICMP, SSH, DHCP, DNS, RDP)
 - Wireshark (Protocol Analyzer)
 
 <h2>Operating Systems Used </h2>
@@ -23,35 +28,26 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Windows 10 (21H2)
 - Ubuntu Server 20.04
 
-<h2>High-Level Steps</h2>
+<h2>Objective</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+Observe the various network protocol traffic which includes:
+
+- ICMP (Internet Control Message Protocol)
+- SSH (Secure Shell)
+- DHCP (Dynamic Host Configuration Protocol)
+- DNS (Domain Name System)
+- RDP (Remote Desktop Protocol)
 
 <h2>Actions and Observations</h2>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+Getting started:
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+1.) First I have to create a resource group on Azure which will include two Virtual Machines (Windows 10 & Ubuntu)
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+2.) Remote into both the Virtual Machines(VM) with Remote Desktop Connection if you are running a WindowsOS, or Microsoft Remote Desktop if you are using macOS
+
+3.) Download Wireshark onto the Windows 10 Virtual Machine
+
+4.) The following images will present how I observed the network traffic via WireShark.
+
+<img src="https://imgur.com/a/b7z9CHW" alt="ICMP Traffic"/>

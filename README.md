@@ -120,7 +120,7 @@ Domain Host Configuration Protocol is a network protocol used to automatically a
 </p>
     
 <p>
-1.) On Windows 10 VM, open WireShark and filter for "TCP port == 3360".
+1.) On Windows 10 VM, open WireShark and filter for "TCP port == 3389".
      
 2.) WireShark will then display TCP traffic. 
      

@@ -75,7 +75,7 @@ Internet Control Message Protocol (ICMP) is a network protocol used for diagnost
 <h3>SSH Traffic</h3>
 
 <p>
-<img src="https://imgur.com/cWYhgkr.png"
+<img src="https://imgur.com/ln6Wr2D"
 </p>
 
 <p>     

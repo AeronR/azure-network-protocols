@@ -40,6 +40,7 @@ Observe the various network protocol traffic which includes:
 
 <h2>Actions and Observations</h2>
 
+<p>
 Getting started:
 
 1.) First I have to create a resource group on Azure which will include two Virtual Machines (Windows 10 & Ubuntu)
@@ -49,26 +50,30 @@ Getting started:
 3.) Download WireShark onto the Windows 10 Virtual Machine
 
 4.) The following images will present how I observed the network traffic via WireShark.
+</p>
 
-<br/>
+<h3>ICMP Traffic</h3>  
+
 <p>
 <img src="https://imgur.com/xB3LRcI.png" 
      </p>
 
-This image is how I monitored the ICMP traffic between the two VM's (Windows & Ubuntu).
+ <p>
+ How to observe ICMP traffic:
+    
+ 1.) Retrieve the private IP address of the Ubunutu VM (in my case the private IP address was 10.0.0.5)
 
-  1.) Retrieve the private IP address of the Ubunutu VM (in my case the private IP address was 10.0.0.5)
-
-  2.) After retrieving the private IP address of the Ubuntu VM, I then connected to the Windows VM and pinged the private IP address of Ubuntu on the command prompt. 
+ 2.) After retrieving the private IP address of the Ubuntu VM, I then connected to the Windows VM and pinged the private IP address of Ubuntu on the command prompt. 
   
  3.) The ping request and replies were then observerd in WireShark while the command line ping activitiy was monitored in the Windows 10 VM.
   
   Some context:
   Internet Control Message Protocol (ICMP) is a network protocol used for diagnostic and control purposes within IP networks. It is primarly utilized by network devices, such as routers, to communicate error messages and operational information regarding network connectivity. 
   
-<br/>
- <p>
-   <img src="https://imgur.com/N2ilsoq.png"
-        </p>
-   
+<h3> SSH Traffic <h3>
+<p>
+<img src="https://imgur.com/cWYhgkr.png"
+</p>
+                
+        
         

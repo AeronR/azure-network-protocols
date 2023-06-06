@@ -69,11 +69,64 @@ Getting started:
   
   Some context:
   Internet Control Message Protocol (ICMP) is a network protocol used for diagnostic and control purposes within IP networks. It is primarly utilized by network devices, such as routers, to communicate error messages and operational information regarding network connectivity. 
-  
-<h3> SSH Traffic <h3>
+      
+<h3>SSH Traffic</h3>
+
 <p>
 <img src="https://imgur.com/cWYhgkr.png"
 </p>
-                
-        
-        
+
+<p>     
+How to observe SSH Traffic:
+     
+1.) On the Windows 10 VM, open WireShark and filter for SSH traffic.
+ 
+2.) While on the Windows 10 VM, open the command prompt and SSH into the Ubuntu VM's private IP (in my case it was 10.0.0.5)
+    
+3.) Once I logged into the Ubuntu VM through the Windows VM command prompt, WireShark will then display the SSH traffic.
+    
+Some context:
+
+Secure Shell(SSH) is a network protocol that provides secure remote access to systems over an unesecured network.
+     
+The primary focus of SSH is to enable users to securely log itno remtoe systems and execute commands remotely. It establishes a secure encrypted channel between the client and the server, protecting the confidentiality and integrity of the communication. 
+</p>     
+ 
+<h3>DHCP Traffic</h3>
+<p>
+<img src=https://imgur.com/0wfF21K.png"
+</p>
+                                          
+<p>
+How to observe DHCP Traffic:
+
+1.) Again on the Windows VM, open WireShark and filter for DHCP traffic.
+
+2.) While on the Windows VM, issues your machine a new IP address by opening the command prompt and typing it the command line "ipconfig /renew" which will then restart your VM and issue a new IP address.
+
+3.) Once the IP address has been renewed, WireShark will then start displaying the DHCP traffic. 
+ 
+Some Context: 
+                                                                                                                                                
+Domain Host Configuration Protocol is a network protocol used to automatically assign IP addresses and other network configuration settings to devices on a  network. It simplifies the process of IP address allocation and configuration manangemnt in a network enviornment. 
+</p>
+
+<h3>TCP Traffic</h3>                                                                                                                                               
+<p>
+<img src=https://imgur.com/pGzBryt.png"
+</p>
+    
+<p>
+1.) On Windows 10 VM, open WireShark and filter for "TCP port == 3389".
+     
+2.) WireShark will then display TCP traffic. 
+     
+Some Context:
+Transmission Control Protocol(TCP) is a protocol used for sending and recieving data over the internet. It ensures the data is delivered realiably and in the correct order. 
+</p>
+
+   
+
+          
+                                                                                                                                                
+                                                                                                                                                

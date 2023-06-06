@@ -20,7 +20,7 @@ Observing and understanding Network Protocol traffic is quite imporant and is us
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
 - Various Command-Line Tools (ping, ipconfig) 
-- Various Network Protocols (ICMP, SSH, DHCP, DNS, RDP)
+- Various Network Protocols (ICMP, SSH, DHCP, DNS, TCP)
 - Wireshark (Protocol Analyzer)
 
 <h2>Operating Systems Used </h2>

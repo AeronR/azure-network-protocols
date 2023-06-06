@@ -59,17 +59,19 @@ Getting started:
      </p>
 
  <p>
- How to observe ICMP traffic:
+ How to display ICMP traffic:
     
- 1.) Retrieve the private IP address of the Ubunutu VM (in my case the private IP address was 10.0.0.5)
+ 1.) Retrieve the private IP address of the Ubuntu VM (in my case the private IP address was 10.0.0.5)
 
- 2.) After retrieving the private IP address of the Ubuntu VM, I then connected to the Windows VM and pinged the private IP address of Ubuntu on the command prompt. 
+ 2.) After retrieving the private IP address of the Ubuntu VM, I then connected to the Windows VM and pinged the private IP address of Ubuntu on the command prompt using the command like "ping (followed by the IP address)".
   
- 3.) The ping request and replies were then observerd in WireShark while the command line ping activitiy was monitored in the Windows 10 VM.
+ 3.) The ping request and replies are then displayed in WireShark while the command line ping activitiy was monitored in the Windows 10 VM.
   
-  Some context:
-  Internet Control Message Protocol (ICMP) is a network protocol used for diagnostic and control purposes within IP networks. It is primarly utilized by network devices, such as routers, to communicate error messages and operational information regarding network connectivity. 
-      
+Some context:
+  
+Internet Control Message Protocol (ICMP) is a network protocol used for diagnostic and control purposes within IP networks. It is primarly utilized by network devices, such as routers, to communicate error messages and operational information regarding network connectivity. 
+</p>     
+
 <h3>SSH Traffic</h3>
 
 <p>
@@ -77,7 +79,7 @@ Getting started:
 </p>
 
 <p>     
-How to observe SSH Traffic:
+How to display SSH Traffic:
      
 1.) On the Windows 10 VM, open WireShark and filter for SSH traffic.
  
@@ -87,12 +89,13 @@ How to observe SSH Traffic:
     
 Some context:
 
-Secure Shell(SSH) is a network protocol that provides secure remote access to systems over an unesecured network.
+Secure Shell(SSH) is a network protocol that provides secure remote access to systems over an unsecured network.
      
-The primary focus of SSH is to enable users to securely log itno remtoe systems and execute commands remotely. It establishes a secure encrypted channel between the client and the server, protecting the confidentiality and integrity of the communication. 
+The primary focus of SSH is to enable users to securely log into remote systems and execute commands remotely. It establishes a secure encrypted channel between the client and the server, protecting the confidentiality and integrity of the communication. 
 </p>     
  
 <h3>DHCP Traffic</h3>
+
 <p>
 <img src=https://imgur.com/0wfF21K.png"
 </p>
@@ -122,6 +125,7 @@ Domain Host Configuration Protocol is a network protocol used to automatically a
 2.) WireShark will then display TCP traffic. 
      
 Some Context:
+
 Transmission Control Protocol(TCP) is a protocol used for sending and recieving data over the internet. It ensures the data is delivered realiably and in the correct order. 
 </p>
 
